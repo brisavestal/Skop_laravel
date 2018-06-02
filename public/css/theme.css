@@ -1,0 +1,628 @@
+@import url('https://fonts.googleapis.com/css?family=IM+Fell+Great+Primer:400,400i|Khand');
+@import url('fontawesome-all.min.css');
+* {
+    box-sizing: border-box;
+    word-wrap: normal;
+}
+
+html,
+body {
+    min-height: 100%;
+}
+
+body {
+    font-family: 'Khand', sans-serif;
+    background: #ebebf3
+}
+
+
+/*typography*/
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.ifgp {
+    font-family: 'IM Fell Great Primer', serif;
+}
+
+.khand {
+    font-family: 'Khand', sans-serif;
+}
+
+a {
+    cursor: pointer
+}
+
+a:hover,
+button:hover,
+.btn-link:hover {
+    color: currentColor;
+    text-decoration: none;
+}
+
+::-webkit-input-placeholder {
+    color: #9999c2 !important;
+}
+
+::-moz-placeholder {
+    color: #9999c2 !important;
+}
+
+:-ms-input-placeholder {
+    color: #9999c2 !important;
+}
+
+:-moz-placeholder {
+    color: #9999c2 !important;
+}
+
+.bold {
+    font-weight: bold
+}
+
+.normal {
+    font-style: normal;
+    letter-spacing: 2px
+}
+
+
+/*Colours*/
+
+.violet {
+    color: #631ce6;
+}
+
+.violet_bg {
+    background-color: #631ce6;
+}
+
+.violet_bg.transparent {
+    background: rgba(99, 28, 230, .5);
+    box-shadow: 1px 2px 10px black;
+}
+
+.violet_border {
+    border-color: #631ce6;
+}
+
+.gold {
+    color: #999933;
+}
+
+.gold_bg {
+    background-color: #999933;
+}
+
+.gold_border {
+    border-color: #999933;
+}
+
+.deepBlue {
+    color: #000066
+}
+
+.deepBlue_bg {
+    background-color: #000066;
+}
+
+.deepBlue_border {
+    border-color: #000066;
+}
+
+.deepBlue00_bg {
+    background-color: #cccce0
+}
+
+.deepBlue0 {
+    color: #9999c2
+}
+
+.white {
+    color: #ffffff;
+}
+
+.white_bg {
+    background-color: #ffffff;
+}
+
+.white_border {
+    border-color: #ffffff;
+}
+
+
+/* borders */
+
+.circle {
+    border-radius: 100%;
+    display: block
+}
+
+.border_1 {
+    border-style: solid;
+    border-width: 1px
+}
+
+
+/* brand */
+
+.navbar-brand {
+    letter-spacing: 4px;
+    font-weight: bold
+}
+
+.navbar-brand:hover,
+.navbar-brand:focus,
+.navbar-brand:active {
+    color: white
+}
+
+
+/*navbar*/
+
+.navbar-collapse {
+    justify-content: flex-end
+}
+
+.navbar ul.navbar-nav li a {
+    width: 30px;
+    height: 30px;
+    display: block;
+    text-align: center;
+    line-height: 34px;
+    padding: 0!important;
+}
+
+
+/*splash*/
+
+.splash {
+    position: relative
+}
+
+.moreActions {
+    position: absolute;
+    right: 15%;
+    z-index: 9;
+    top: 50%;
+    transform: translateY(-50%);
+    padding-top: 56px
+}
+
+.moreActions li {
+    padding-right: 3em!important;
+    position: relative;
+}
+
+.moreActions i {
+    position: absolute;
+    right: 1em;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+
+/* Carousel*/
+
+.carousel-caption {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.carousel-item {
+    height: 32rem;
+}
+
+.carousel-item figure {
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    overflow: hidden;
+    height: 100%;
+}
+
+.carousel-item figure:after {
+    background: rgba(0, 0, 102, .75);
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    content: '';
+    mix-blend-mode: multiply;
+}
+
+.carousel-item figure img {
+    width: 100%;
+    min-width: 100%;
+    height: auto;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.carousel-indicators {
+    bottom: 30px
+}
+
+
+/* Main */
+
+.mainContent {
+    position: relative;
+    z-index: 2;
+    min-height: calc(100vh - 3em);
+}
+
+.home .mainContent {
+    margin-top: -2em;
+}
+
+footer {
+    height: 3em;
+    line-height: 3em;
+    overflow: hidden;
+    position: relative;
+    z-index: 999
+}
+
+footer p {
+    margin: 0
+}
+
+
+/*chat*/
+
+.chat ul li {
+    width: 50px;
+    height: 50px;
+    position: relative;
+    cursor: pointer;
+}
+
+.chat ul li:after {
+    position: absolute;
+    top: 2px;
+    right: 2px;
+    width: 10px;
+    height: 10px;
+    content: '';
+    display: block;
+    border-radius: 100%;
+}
+
+.chat ul li.active:after {
+    background: lightseagreen;
+}
+
+.chat ul li:after {
+    background: orangered;
+}
+
+.chat ul li figure {
+    width: 100%;
+    height: 100%;
+    border: 2px solid #fff;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.chat ul li img {
+    border-radius: 100%;
+    width: 85px;
+    height: auto;
+    position: relative;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    transition: all ease-in-out .25s;
+    opacity: .5
+}
+
+.chat ul li:hover img {
+    opacity: 1
+}
+
+
+/* post articles */
+
+.post figure div.circle {
+    width: 75px;
+    height: 75px;
+    position: relative;
+    cursor: pointer;
+    border: 2px solid #cccce0;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    padding: .25em
+}
+
+.post figure div.circle img {
+    border-radius: 100%;
+    width: 110px;
+    height: auto;
+    position: relative;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    transition: all ease-in-out .25s;
+    opacity: 1;
+}
+
+.post ul li:hover img {
+    opacity: .5
+}
+
+.post header h5,
+.post header p {
+    line-height: 1;
+}
+
+.post header figure {
+    position: relative
+}
+
+.post .timePost {
+    position: absolute;
+    top: .25em;
+    right: 0
+}
+
+.sharedContent header h3 {
+    margin-top: -1.5em;
+    font-weight: bold;
+    letter-spacing: 2px
+}
+
+
+/*registro y login */
+
+.registro main,
+.login main,
+.faqs main {
+    background: rgba(0, 0, 102, .75);
+    mix-blend-mode: multiply;
+}
+
+.registro {
+    background: url(../img/galaxias/2.jpg) no-repeat center / cover
+}
+
+.login {
+    background: url(../img/galaxias/1.jpg) no-repeat center / cover
+}
+
+.registro header,
+.login header,
+.faqs header {
+    text-align: center
+}
+
+.registro h1,
+.login h1,
+.faqs h1 {
+    position: relative;
+    display: inline-block;
+    margin: auto
+}
+
+.registro h1:before,
+.registro h1:after,
+.login h1:before,
+.login h1:after,
+.faqs h1:before,
+.faqs h1:after {
+    content: '';
+    position: absolute;
+    width: 2em;
+    height: 2px;
+    background: #fff;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.registro h1:before,
+.login h1:before,
+.faqs h1:before {
+    left: -2.5em
+}
+
+.registro h1:after,
+.login h1:after,
+.faqs h1:after {
+    right: -2.5em
+}
+
+.mainContent form {
+    position: relative
+}
+
+.mainContent form label {
+    margin: 0!important;
+    font-weight: bold
+}
+
+.mainContent form button[type="submit"] {
+    border-radius: 0;
+    position: absolute;
+    bottom: -50px;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    font-weight: bold
+}
+
+.mainContent form button[type="submit"]:hover,
+.mainContent form button[type="submit"]:active,
+.mainContent form button[type="submit"]:focus {
+    background: #adad5c;
+    border: #999933;
+}
+
+form p small a {
+    text-decoration: underline;
+}
+
+
+/*faqs */
+
+.faqs {
+    background: url(../img/galaxias/1.jpg) no-repeat center / cover;
+}
+
+.faqs header h1 {
+    margin-top: 100px
+}
+
+
+/* RESPONSIVE CSS */
+
+@media (max-width: 1400px) {
+    .moreActions {
+        right: 10%
+    }
+    .carousel-caption {
+        padding-right: 15%;
+        left: 10%
+    }
+    .display-1 {
+        font-size: 4rem;
+        line-height: 1
+    }
+}
+
+@media (max-width: 900px) {
+    .carousel-item {
+        height: 25rem;
+    }
+    .display-1 {
+        font-size: 3rem;
+    }
+    .moreActions {
+        right: 0;
+        left: 0;
+        top: 75px;
+        transform: none;
+        padding: 0;
+        max-width: 720px;
+        margin: auto
+    }
+    .moreActions ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    .moreActions ul li {
+        flex: 1;
+        margin: 0 .5em;
+        padding: .5em 0 .15em 0!important;
+        text-align: center;
+    }
+    .moreActions i {
+        position: absolute;
+        right: 0;
+        left: 0;
+        top: -10px;
+        transform: none;
+        margin: auto;
+    }
+    .chatMobile {
+        position: fixed;
+        bottom: .5em;
+        right: .5em;
+        z-index: 999
+    }
+    .chatMobile button {
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.25);
+        width: 65px;
+        height: 65px;
+    }
+    .registro h1:before,
+    .registro h1:after,
+    .login h1:before,
+    .login h1:after,
+    .faqs h1:before,
+    .faqs h1:after {
+        display: none
+    }
+    .registro .mainContent,
+    .login .mainContent {
+        align-items: flex-start
+    }
+    .registro header h1,
+    .faqs header h1,
+    .login header h1 {
+        margin-top: 50px;
+        margin-bottom: .5em;
+    }
+    .registro .mainContent {
+        padding-bottom: 50px
+    }
+    .login form div.d-flex {
+        flex-direction: column;
+        margin-bottom: .5em
+    }
+    .login form div.d-flex p {
+        text-align: center!important;
+        padding: .5em 0
+    }
+}
+
+@media (max-width: 600px) {
+    .carousel-item figure img {
+        width: auto;
+    }
+    .carousel-caption {
+        right: 10%;
+        left: 10%;
+        padding: 0!important;
+        bottom: 0;
+    }
+    .display-1 {
+        font-size: 2rem;
+    }
+    .carousel-control-next,
+    .carousel-control-prev {
+        width: 10%
+    }
+    .cta i.mb-2 {
+        margin-bottom: 0!important
+    }
+    .navbar-brand {
+        padding-left: 1em
+    }
+    .navbar {
+        padding: 0;
+    }
+    .navbar-nav {
+        display: flex;
+        flex-direction: row;
+        margin: 1em auto !important;
+        justify-content: space-around;
+    }
+    .navbar-nav li {
+        margin: 0 .5em;
+        flex: 1;
+        justify-content: center;
+        display: flex;
+    }
+    .navbar-collapse {
+        background: #631ce6;
+        padding: .5em 1em;
+    }
+    .navbar-collapse form {
+        position: relative
+    }
+    .navbar-collapse form button {
+        position: absolute;
+        margin: 0!important;
+        right: .5em;
+        top: 0!important
+    }
+}
