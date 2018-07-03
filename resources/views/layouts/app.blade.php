@@ -67,5 +67,7 @@
             <p class="deepBlue text-center m-0 pb-2">¿Querés saber más sobre <em class="normal bold text-uppercase">skop.com</em>? Cliqueá <a href="faqs.php" class="violet" title="Preguntas frecuentes">aquí</a></p>
         </footer>
     </div>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="{{ asset('js/validation_login.js') }}"></script>
 </body>
 </html>
